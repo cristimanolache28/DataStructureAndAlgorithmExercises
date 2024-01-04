@@ -14,7 +14,7 @@ public class FindDuplicateCharacters {
 
     public static void printDuplicateCharacters(String word) {
         char[] characters = word.toCharArray();
-        Map<Character, Integer> map = new HashMap<Character, Integer>();
+        Map<Character, Integer> map = new HashMap<>();
         for (Character ch : characters) {
             if (map.containsKey(ch)) {
                 int counter = map.get(ch);
@@ -32,6 +32,7 @@ public class FindDuplicateCharacters {
             }
         }
     }
+
 }
 
 
